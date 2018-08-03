@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <style>
+	    .papercontainer {
+	    	width: 100%; // height:100vh;
+	    }
+	    #papercanvas {
+	        display: block;
+	        width: 90%;
+	        height: 90%;
+	        padding-top: 50px;
+	        margin: auto;
+	    }
+    </style>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.11.4/paper-full.min.js"></script>
+    <script type="text/javascript" src="script1.js"></script>
+    <script type="text/paperscript" canvas="papercanvas" src="script2.js"></script>
+    <div class="papercontainer">
+        <canvas id="papercanvas" resize></canvas>
+    </div>
+</body>
+
+</html>
